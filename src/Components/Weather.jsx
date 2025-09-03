@@ -40,10 +40,10 @@ function Weather() {
   const apiKey = import.meta.env.VITE_WEATHER_ID;
 
   const handleSearch = async (searchCity) => {
-    if (!searchCity) {
-      alert("Enter the City Name");
-      return;
-    }
+    // if (!searchCity) {
+    //   alert("Enter the City Name");
+    //   return;
+    // }
 
     try {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&units=metric&appid=${apiKey}`;
